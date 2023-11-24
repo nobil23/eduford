@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,100;1,300;1,600&family=Roboto:wght@500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+/* header section start */
+header{
+   
+    width: 100%;
+    min-height: 50vh;
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 70%) 0%, rgb(0 0 0 / 70%) 100%), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0%;
+}
+
+nav img{
+    width:150px;
+
+}
+
+.nav-links{
+   display: flex;
+   text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 12px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font: size 16px;
+}
+.nav-links ul li::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #ff0404;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+
+}
+
+.nav-links .fa-xmark{
+    visibility: hidden;
+}
+
+nav .fa-bars{
+    visibility: hidden;
+}
+
+.head-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.head-txt h1{
+    margin-top: 5%;
+    font-size:40px;
+    color: #fff;
+}
+
+@media (max-width: 640px) { /* header section responsive */
+    .container{
+        width: 90%;
+    }
+    nav{
+        padding: 4% 0%;
+    }
+    nav .fa-bars{
+        visibility: visible;
+        display: block;
+        font-size: 22px;
+        color: #fff;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50%;
+        width: 200px;
+        background: #e23719;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links .fa-xmark{
+        visibility: visible;
+        color: #fff;
+        font-size: 22px;
+        margin: 12px;
+        display: block;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    
+  
+}
+/* header section end */
+
+/*main start */
+main section{
+   padding-left: 8%;
+   padding-right: 6%;
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+     
+} 
+.teacher-txt{
+    width: 100%;
+   
+    
+    
+}
+.teacher-txt h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.teacher-txt p{
+    text-align: justify;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+
+.hero-btn{
+    
+    text-decoration: none;
+    color: #e23719;;
+    border: 1px solid #e23719;
+    padding: 12px 34px;
+    background-color: transparent;
+    transition: 0.5s;
+    font-size: 18PX;
+    font-weight: 800;
+}
+.hero-btn:hover{
+    background-color: #e23719;
+    border-color: #e23719;
+    color: #000;
+}
+
+
+
+.teacher-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-img img{
+    
+  /* width: 507px;
+  height: 338px; */
+
+  width: 95%;
+  margin-top: 3%;
+
+  
+   
+}
+
+
+
+/*footer start */
+footer section{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+footer section p{
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    color: #666;
+    margin-top: 25px;
+    
+}
+
+
+footer section div{
+    margin-top: 10px;
+   
+   
+   
+}
+footer section div i{
+    padding: 7px;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    font-size: 18px;
+    color: #ffff;
+    border-radius: 50%;
+}
+.fa-brands:hover{
+    box-shadow: 0px 0px 10px 3px #e23719;
+}
+
+@media (max-width: 640px) {
+    main section{
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher-img img{
+   width: 100%;
+}
+footer section{
+    margin-top: 120%;
+
+}
+}
+
